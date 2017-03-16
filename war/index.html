@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Hello App Engine</title>
+</head>
+
+<body>
+	<h1>GAEJEmailServlet</h1>
+	<form action="gaejemailservlet" method="post">
+		<div class="form-group">
+			<label class="control-label col-sm-2">Mail tới:</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" name="email_to"
+					placeholder="email nhận" required>
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<label class="control-label col-sm-2">Tựa đề mail:</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" name="email_subject"
+					placeholder="email_subject" required>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-sm-2">N :</label>
+			<div class="col-md-10">
+				<textarea class="form-control" rows="5" name="email_body"
+					placeholder="noi dung" required></textarea>
+			</div>
+		</div>
+
+		<div class="form-group"
+			style="text-align: left; padding-top: 10px; padding-bottom: 10px">
+			<button type="submit" class="btn btn-info"
+				style="padding-right: 10px; padding-left: 10px;">Gửi</button>
+		</div>
+	</form>
+</body>
+</html>
